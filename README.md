@@ -24,7 +24,7 @@ Dame tu feedback, si tienes sugerencias o mejoras, abre un `issue` por favor, ¡
 - Estilos: CSS Modules / Tailwind CSS.
 - Despliegue: Vercel.
 
-## Configuración del Entorno
+## Configuración del Entorno
 
 Para sincronizar tus artículos de Dev.to, crea un archivo `.env.local` en el directorio raíz. Puedes guiarte por el archivo `.env.local.example`.
 
