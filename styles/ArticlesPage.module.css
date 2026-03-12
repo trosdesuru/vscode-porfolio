@@ -127,10 +127,10 @@
 }
 
 /* Articles List */
-.articlesList {
+/* .articlesList {
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* Responsive */
 @media (max-width: 640px) {
