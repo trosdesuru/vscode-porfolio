@@ -1,3 +1,6 @@
+import { BiBorderAll } from "react-icons/bi";
+import { MdRoundedCorner } from "react-icons/md";
+
 export interface Project {
   title: string;
   description: string;
@@ -9,34 +12,31 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'Case Study | Ticketeame',
-    description:
-      'Discover creative websites and developers. A portal for you to share your projects.',
-    logo: '/logos/driwwwle.svg',
+    description: 'Liderazgo de diseño y estrategia UX/UI para una plataforma transaccional B2B2C escalable.',
+    logo: '/logos/ticketeame.svg',
     link: 'https://www.figma.com/proto/t4ySjWQYuC7TMqxS4nztx1/Ticketeame?page-id=1822%3A11699&node-id=6679-341&p=f&viewport=-84%2C543%2C0.14&t=QpnxX15XfUxj7xpu-1&scaling=contain&content-scaling=fixed&starting-point-node-id=6679%3A341',
-    slug: 'driwwwle',
+    slug: 'Ticketeame',
   },
   {
     title: 'VSCode Portfolio',
-    description:
-      'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
+    description: 'Portfolio interactivo desarrollado con Next.js que simula el entorno de VS Code, destacando mi perfil técnico.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
+    link: 'https://github.com/trosdesuru/vscode-portfolio',
     slug: 'vscode-portfolio',
   },
   {
-    title: 'Subtrackt',
-    description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
+    title: 'SaaS Logístico | Valerdat',
+    description: 'Diseño de dashboards analíticos e interfaces para la gestión de datos complejos en un entorno SaaS B2B.',
+    logo: '/logos/valerdat.png',
+    link: '',
+    slug: 'valerdat',
   },
   {
-    title: 'Coolify Deployments',
+    title: 'Cities App',
     description:
       'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
+    logo: '/logos/cities.png',
+    link: 'https://www.behance.net/gallery/159297987/cities-UX-UI',
     slug: 'coolify-vscode-extension',
   },
 ];
