@@ -19,7 +19,7 @@ const Titlebar = ({ onOpenCommandPalette }: TitlebarProps) => {
     <section className={styles.titlebar}>
       <Image
         src="/logos/vscode_icon.svg"
-        alt="VSCode Icon"
+        alt="Figma Icon"
         height={15}
         width={15}
         className={styles.icon}
@@ -27,7 +27,7 @@ const Titlebar = ({ onOpenCommandPalette }: TitlebarProps) => {
       <div className={styles.items}>
         <p>Archivo</p>
         <p>Editar</p>
-        <p onClick={handleViewClick} className={styles.menuItem} title="Open Command Palette (Ctrl+Shift+P)">View</p>
+        <p onClick={handleViewClick} className={styles.menuItem} title="Abrir Opciones de Comandos (Ctrl+Shift+P)">Ver</p>
         <p>Ver</p>
         <p>Ir</p>
         <p>Terminal</p>

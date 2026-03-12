@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     template: 'Eduard Hernández | %s',
   },
   description: "Product Designer con sólida base como Frontend Developer. Diseño experiencias de usuario estratégicas y construyo sistemas de diseño escalables con React y TypeScript.",
+  icons: {
+    icon: '/logos/icon.png', // Asegúrate de que este archivo esté en la carpeta public/
+    shortcut: '/logos/icon.png',
+    apple: '/logos/icon.png'
+  },
   keywords: [
     'eduard hernández',
     'ux engineer',
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Eduard Hernández's Portfolio",
     description: "Product Designer & UX Engineer construyendo data-driven y aplicaciones funcionales.",
-    url: 'https://eduardhernandez.vercel.app',
+    url: 'https://eduardhernandez-portfolio.vercel.app/',
   },
   twitter: {
     card: 'summary_large_image',
