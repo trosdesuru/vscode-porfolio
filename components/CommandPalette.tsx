@@ -36,7 +36,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
     const baseCommands: Command[] = [
       {
         id: 'go-home',
-        label: 'Go to Home',
+        label: 'Ir a Inicio',
         category: 'Navigation',
         shortcut: 'G H',
         icon: <VscHome size={16} />,
@@ -44,7 +44,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'go-about',
-        label: 'Go to About',
+        label: 'Ir a Acerca de',
         category: 'Navigation',
         shortcut: 'G A',
         icon: <VscAccount size={16} />,
@@ -52,7 +52,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'go-projects',
-        label: 'Go to Projects',
+        label: 'Ir a Proyectos',
         category: 'Navigation',
         shortcut: 'G P',
         icon: <VscCode size={16} />,
@@ -60,7 +60,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       // {
       //   id: 'go-articles',
-      //   label: 'Go to Articles',
+      //   label: 'Ir a Articles',
       //   category: 'Navigation',
       //   shortcut: 'G R',
       //   icon: <VscBook size={16} />,
@@ -68,7 +68,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       // },
       {
         id: 'go-contact',
-        label: 'Go to Contact',
+        label: 'Ir a Contacto',
         category: 'Navigation',
         shortcut: 'G C',
         icon: <VscMail size={16} />,
@@ -76,7 +76,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'go-github',
-        label: 'Go to GitHub',
+        label: 'Ir a GitHub',
         category: 'Navigation',
         shortcut: 'G G',
         icon: <VscGithubAlt size={16} />,
@@ -84,7 +84,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'go-settings',
-        label: 'Go to Settings',
+        label: 'Ir a Configuración',
         category: 'Navigation',
         shortcut: 'G S',
         icon: <VscGear size={16} />,
@@ -92,7 +92,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'toggle-terminal',
-        label: isTerminalOpen ? 'Close Terminal' : 'Open Terminal',
+        label: isTerminalOpen ? 'Cerrar Terminal' : 'Abrir Terminal',
         category: 'Terminal',
         shortcut: 'Ctrl+`',
         icon: <VscTerminal size={16} />,
@@ -100,7 +100,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
       },
       {
         id: 'change-theme',
-        label: 'Change Color Theme',
+        label: 'Cambiar Tema de Color',
         category: 'Preferences',
         shortcut: 'K T',
         icon: <VscSymbolColor size={16} />,
@@ -214,7 +214,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder={showThemePicker ? 'Select color theme' : 'Type a command or search...'}
+            placeholder={showThemePicker ? 'Cambiar Tema de Color' : 'Escribe un comando o busca...'}
             className={styles.input}
             spellCheck={false}
             autoComplete="off"
@@ -235,10 +235,10 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
         <div className={styles.results} ref={listRef}>
           {showThemePicker ? (
             filteredThemes.length === 0 ? (
-              <div className={styles.noResults}>No matching themes</div>
+              <div className={styles.noResults}>No se encontraron temas</div>
             ) : (
               <>
-                <div className={styles.category}>Color Theme</div>
+                <div className={styles.category}>Tema de Color</div>
                 {filteredThemes.map((theme, index) => (
                   <div
                     key={theme.theme}
@@ -260,7 +260,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
               </>
             )
           ) : filteredCommands.length === 0 ? (
-            <div className={styles.noResults}>No matching commands</div>
+            <div className={styles.noResults}>No se encontraron comandos</div>
           ) : (
             (() => {
               let lastCategory = '';
@@ -287,7 +287,7 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
                       </div>
                       {cmd.shortcut && (
                         <div className={styles.shortcut}>
-                          {cmd.id === 'change-theme' ? (
+                          {cmd.id === 'Cambiar Tema de Color' ? (
                             <MdNavigateNext size={16} />
                           ) : (
                             cmd.shortcut.split(' ').map((key, i) => (
@@ -308,13 +308,13 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
 
         <div className={styles.footer}>
           <div className={styles.footerItem}>
-            <span className={styles.key}>↑↓</span> to navigate
+            <span className={styles.key}>↑↓</span> para navegar
           </div>
           <div className={styles.footerItem}>
-            <span className={styles.key}>↵</span> to select
+            <span className={styles.key}>↵</span> para seleccionar
           </div>
           <div className={styles.footerItem}>
-            <span className={styles.key}>esc</span> to close
+            <span className={styles.key}>esc</span> para cerrar
           </div>
         </div>
       </div>

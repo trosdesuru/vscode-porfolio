@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: 'VSCode Portfolio',
     description: 'Portfolio interactivo desarrollado con Next.js que simula el entorno de VS Code, destacando mi perfil técnico.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/trosdesuru/vscode-portfolio',
+    link: 'https://github.com/trosdesuru/vscode-porfolio',
     slug: 'vscode-portfolio',
   },
   {
@@ -33,8 +33,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Cities App',
-    description:
-      'VSCode extension to track and deploy your Coolify applications.',
+    description: 'App móvil nacida de una necesidad real: descubrir lugares auténticos. Diseño UX/UI centrado en conectar a viajeros con las experiencias de la gente local, lejos de las rutas turísticas convencionales.',
     logo: '/logos/cities.png',
     link: 'https://www.behance.net/gallery/159297987/cities-UX-UI',
     slug: 'coolify-vscode-extension',

@@ -25,13 +25,13 @@ const Titlebar = ({ onOpenCommandPalette }: TitlebarProps) => {
         className={styles.icon}
       />
       <div className={styles.items}>
-        <p>File</p>
-        <p>Edit</p>
+        <p>Archivo</p>
+        <p>Editar</p>
         <p onClick={handleViewClick} className={styles.menuItem} title="Open Command Palette (Ctrl+Shift+P)">View</p>
-        <p>Go</p>
-        <p>Run</p>
+        <p>Ver</p>
+        <p>Ir</p>
         <p>Terminal</p>
-        <p>Help</p>
+        <p>Ayuda</p>
       </div>
       <p className={styles.title}>Eduard Hernández - Visual Studio Code</p>
       <div className={styles.windowButtons}>
