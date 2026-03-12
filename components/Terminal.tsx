@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { VscTerminal, VscClose } from 'react-icons/vsc';
+import { track } from '@vercel/analytics';
 
 import { THEME_KEYS } from '@/lib/themes';
 import styles from '@/styles/Terminal.module.css';
@@ -150,6 +151,11 @@ const Terminal = ({ onToggle }: TerminalProps) => {
     e.preventDefault();
     const trimmed = input.trim();
 
+    if (trimmed) {
+      const cmd = trimmed.split(' ')[0].toLowerCase();
+      track('Terminal Command Used', { command: cmd });
+    }
+
     if (trimmed === 'clear') {
       setLines([]);
     } else {
@@ -167,17 +173,23 @@ const Terminal = ({ onToggle }: TerminalProps) => {
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowUp') {
       e.preventDefault();
+
       if (commandHistory.length > 0) {
         const newIndex = historyIndex < commandHistory.length - 1 ? historyIndex + 1 : historyIndex;
+
         setHistoryIndex(newIndex);
         setInput(commandHistory[commandHistory.length - 1 - newIndex] || '');
       }
+
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
+
       if (historyIndex > 0) {
         const newIndex = historyIndex - 1;
+
         setHistoryIndex(newIndex);
         setInput(commandHistory[commandHistory.length - 1 - newIndex] || '');
+
       } else if (historyIndex === 0) {
         setHistoryIndex(-1);
         setInput('');

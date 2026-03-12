@@ -1,3 +1,6 @@
+'use client'
+
+import { track } from '@vercel/analytics';
 import styles from '@/styles/ContactCode.module.css';
 
 const contactItems = [
@@ -23,8 +26,10 @@ const ContactCode = () => {
           &nbsp;&nbsp;&nbsp;{item.social} : {' '}
 
           <a href={item.href} target="_blank" rel="noopener"
-            style={item.social === 'whatsapp' ?
-              { color: '#25D366', fontWeight: '500' } : {}}
+            style={item.social === 'whatsapp' ? { color: '#25D366', fontWeight: '500' } : {}}
+            onClick={() => {
+              track('Contact Link Clicked', { method: item.social });
+            }}
           >
             {item.link}
           </a>

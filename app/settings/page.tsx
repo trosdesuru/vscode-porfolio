@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { VscColorMode } from 'react-icons/vsc';
+import { track } from '@vercel/analytics';
 
 import { THEMES } from '@/lib/themes';
 import ThemeInfo from '@/components/ThemeInfo';
@@ -22,6 +23,8 @@ const SettingsPage = () => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     setActiveTheme(theme);
+
+    track('Theme Changed', { newTheme: theme, source: 'Settings Page' });
   };
 
   if (!isLoaded) {

@@ -1,6 +1,8 @@
+'use client'
+
 import Image from 'next/image';
 import { VscLinkExternal } from 'react-icons/vsc';
-
+import { track } from '@vercel/analytics';
 import { Project } from '@/types';
 
 import styles from '@/styles/ProjectCard.module.css';
@@ -17,11 +19,14 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       target="_blank"
       rel="noopener noreferrer"
       className={styles.card}
+      onClick={() => {
+        track('Project Clicked', { projectName: project.title });
+      }}
     >
       <div className={styles.number}>
         <span>{String(index).padStart(2, '0')}</span>
       </div>
-      
+
       <div className={styles.content}>
         <div className={styles.main}>
           <div className={styles.header}>
@@ -36,7 +41,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             </div>
             <h3 className={styles.title}>{project.title}</h3>
           </div>
-          
+
           <p className={styles.description}>{project.description}</p>
         </div>
 
