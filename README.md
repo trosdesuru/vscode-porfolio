@@ -47,14 +47,14 @@ Como Product Designer, he estructurado el código para facilitar su escalabilida
 - `/pages`: Define la estructura de navegación y el contenido del portfolio.
 - Personalización: Para añadir o quitar secciones, modifica la configuración en `components/Sidebar.jsx` y `components/Tabsbar.jsx`.
 
-## Next.js Resources
+## Recursos de Next.js
 
-To learn more about Next.js, take a look at the following resources:
+Para aprender más sobre Next.js, echa un vistazo a los siguientes recursos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - aprende sobre las funciones y la API de Next.js.
+- [Learn Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
+También puedes consultar el [the Next.js GitHub repository](https://github.com/vercel/next.js/)
 
 ## Despliegue
 
