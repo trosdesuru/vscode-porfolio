@@ -1,25 +1,32 @@
-# vscode-portfolio
-[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/itsnitinr/vscode-portfolio)
+# VSCode Portfolio | UX Engineer Edition
 
-A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
+Un portfolio de desarrollador con la estética de Visual Studio Code, construido con Next.js y optimizado para una experiencia de usuario técnica y fluida.
 
-![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
+Este proyecto refleja mi perfil híbrido, combinando el diseño de interfaces complejas con una arquitectura frontend robusta.
+
+![vscode-portfolio banner]()
 
 ## Features Roadmap
 
-- [ ] Themes and customizations
+- [ ] Terminal Interactiva: Una consola funcional para navegar por el portfolio mediante comandos.
   - [x] GitHub Dark (default)
-  - [ ] One Dark Pro
-  - [x] Dracula
-  - [x] Ayu
-  - [x] Nord
-- [x] Interactive custom terminal
+  - [ ] Dracula, Ayu & Nord.
+  - [x] One Dark Pro (En desarrollo).
+- [x] Integración con Dev.to: Consumo de artículos técnicos de forma dinámica mediante API.
+- [ ] Customizations: Capacidad de extender el entorno con nuevos "plugins" visuales.
 
-For other features and themes suggestions, please open an issue.
+Dame tu feedback, si tienes sugerencias o mejoras, abre un `issue` por favor, ¡gracias!
 
-## Environment Variables
+## Stack Tecnológico
 
-For fetching your articles from dev.to, create an `.env.local` file inside the project directory. Check the `.env.local.example` file for more information.
+- Framework: Next.js (React).
+- Lenguajes: TypeScript & JavaScript.
+- Estilos: CSS Modules / Tailwind CSS.
+- Despliegue: Vercel.
+
+## Configuración del Entorno
+
+Para sincronizar tus artículos de Dev.to, crea un archivo `.env.local` en el directorio raíz. Puedes guiarte por el archivo `.env.local.example`.
 
 ## Running Development Server
 
@@ -29,9 +36,16 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) para ver el resultado en tiempo real.
 
 All VSCode related components can be found in the `components` folder. To change the content of the portfolio, check out the `pages` folder. To add or remove pages, modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
+
+## Arquitectura del Proyecto
+
+Como Product Designer, he estructurado el código para facilitar su escalabilidad:
+- `/components`: Contiene la lógica atómica de la interfaz de VSCode (Sidebar, Tabsbar, Footer).
+- `/pages`: Define la estructura de navegación y el contenido del portfolio.
+- Personalización: Para añadir o quitar secciones, modifica la configuración en `components/Sidebar.jsx` y `components/Tabsbar.jsx`.
 
 ## Next.js Resources
 
@@ -42,8 +56,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
 
-## Deploy on Vercel
+## Despliegue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este proyecto está optimizado para la Vercel Platform. La integración continua asegura que cada cambio en el código se refleje inmediatamente en tu dominio personal.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Revisa [Next.js deployment documentation](https://nextjs.org/docs/deployment) para más detalles.

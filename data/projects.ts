@@ -8,11 +8,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Driwwwle',
+    title: 'Case Study | Ticketeame',
     description:
       'Discover creative websites and developers. A portal for you to share your projects.',
     logo: '/logos/driwwwle.svg',
-    link: 'https://github.com/itsnitinr/driwwwle',
+    link: 'https://www.figma.com/proto/t4ySjWQYuC7TMqxS4nztx1/Ticketeame?page-id=1822%3A11699&node-id=6679-341&p=f&viewport=-84%2C543%2C0.14&t=QpnxX15XfUxj7xpu-1&scaling=contain&content-scaling=fixed&starting-point-node-id=6679%3A341',
     slug: 'driwwwle',
   },
   {
