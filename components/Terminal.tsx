@@ -29,10 +29,10 @@ const commands: Record<string, () => string[]> = {
     '  echo      - Echo text (usage: echo <text>)',
   ],
   about: () => [
-    "Hi, I'm Nitin!",
-    'A passionate full-stack developer who loves building beautiful,',
-    'functional web applications. This portfolio is styled like VS Code',
-    'because I spend most of my time here anyway.',
+    "¡Hola, soy Eduard!",
+    'Un Product Designer y UX Engineer al que le apasiona crear',
+    'aplicaciones web escalables, atractivas y guiadas por datos.',
+    'Actualmente UX Lead, pero me desenvuelvo perfectamente con código.',
   ],
   skills: () => [
     'Technical Skills:',
@@ -209,9 +209,8 @@ const Terminal = ({ onToggle }: TerminalProps) => {
         {lines.map((line, index) => (
           <div
             key={index}
-            className={`${styles.line} ${
-              line.type === 'error' ? styles.error : line.type === 'input' ? styles.input : ''
-            }`}
+            className={`${styles.line} ${line.type === 'error' ? styles.error : line.type === 'input' ? styles.input : ''
+              }`}
           >
             {line.content}
           </div>

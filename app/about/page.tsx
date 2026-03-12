@@ -13,19 +13,18 @@ const AboutPage = () => {
         <header className={styles.header}>
           <div className={styles.headerContent}>
             <div className={styles.headerText}>
-              <h1 className={styles.name}>Nitin Ranganath</h1>
-              <p className={styles.role}>Software Engineer at Tessact</p>
+              <h1 className={styles.name}>Eduard Hernández</h1>
+              <p className={styles.role}>Product Designer & UX Engineer</p>
               <div className={styles.location}>
-                <span className={styles.dot} />
-                Mumbai, India
+                <span className={styles.dot} />Barcelona, España
               </div>
             </div>
           </div>
-          
+
           <div className={styles.headerActions}>
-            <a 
-              href="https://github.com/itsnitinr" 
-              target="_blank" 
+            <a
+              href="https://github.com/trosdesuru"
+              target="_blank"
               rel="noopener noreferrer"
               className={styles.iconButton}
             >
@@ -38,81 +37,80 @@ const AboutPage = () => {
         </header>
 
         <div className={styles.content}>
-          {/* Bio Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <span className={styles.sectionNumber}>01</span>
-              <h2 className={styles.sectionTitle}>About</h2>
+              <h2 className={styles.sectionTitle}>Acerca de mí</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               <p className={styles.paragraph}>
-                I&apos;m a software engineer passionate about crafting beautiful, performant 
-                web experiences. I primarily work with the JavaScript/TypeScript ecosystem 
-                and React, building products that people love to use.
+                Perfil híbrido: Combino una fuerte orientación a negocio y análisis de datos con una sólida base técnica en Ingeniería de Software.
               </p>
-              
+
               <p className={styles.paragraph}>
-                While I specialize in frontend development, I enjoy working across the 
-                stack with Node.js, MongoDB, and Express to bring full-stack applications 
-                to life.
+                Aunque mi especialidad es el Product Design y el desarrollo Frontend, disfruto trabajando de extremo a extremo con tecnologías Full-Stack para conceptualizar, diseñar y dar vida a productos digitales completos, escalables y orientados a la conversión.
               </p>
             </div>
           </section>
 
-          {/* Experience Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <span className={styles.sectionNumber}>02</span>
-              <h2 className={styles.sectionTitle}>Experience</h2>
+              <h2 className={styles.sectionTitle}>Experiencia</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               <div className={styles.experienceCard}>
                 <div className={styles.expMeta}>
-                  <span className={styles.expPeriod}>Present</span>
+                  <span className={styles.expPeriod}>Marzo 2025 - Actualmente</span>
                 </div>
-                <h3 className={styles.expRole}>Software Engineer 2</h3>
-                <p className={styles.expCompany}>Tessact</p>
+                <h3 className={styles.expRole}>Product Designer & UX Engineer</h3>
+                <p className={styles.expCompany}>Ticketeame</p>
                 <ul className={styles.expList}>
-                  <li>Leading frontend development with a lean team of 4 engineers</li>
-                  <li>Building a next-gen video creation suite for professionals</li>
-                  <li>Implemented collaborative video reviewing and editing features</li>
-                  <li>Maintaining in-house component library, icon library and website</li>
+                  <li>Liderazgo de Producto: Dirijo la estrategia de diseño UX/UI trabajando codo a codo con el equipo de desarrollo para asegurar una ejecución técnica impecable.</li>
+                  <li>Diseño B2B2C: Construyo y escalo una plataforma transaccional optimizada tanto para la gestión de clientes (B2B) como para la experiencia del usuario final (B2C).</li>
+                  <li>Innovación Funcional: Diseño e implemento herramientas avanzadas, incluyendo funcionalidades colaborativas de revisión y edición de vídeo.</li>
+                  <li>Sistemas de Diseño: Desarrollo y mantengo de forma activa la librería de componentes internos, la iconografía y la arquitectura web del producto.</li>
                 </ul>
               </div>
 
               <div className={styles.experienceCard}>
                 <div className={styles.expMeta}>
-                  <span className={styles.expPeriod}>Freelance</span>
+                  <span className={styles.expPeriod}>2019 - 2023</span>
                 </div>
-                <h3 className={styles.expRole}>Technical Writer</h3>
-                <p className={styles.expDesc}>
-                  Contributing to publications like <strong>100ms Blog</strong>, 
-                  <strong>LogRocket Blog</strong>, and <strong>DEV.to</strong>.
-                </p>
+                <h3 className={styles.expRole}>Web Designer, Web Developer</h3>
+                <p className={styles.expCompany}>Freelance</p>
+                <ul className={styles.expList}>
+                  <li className={styles.expDesc}>
+                    Diseño y desarrollo de sitios web a medida, uniendo usabilidad, rendimiento y código limpio.
+                  </li>
+                  <li className={styles.expDesc}>
+                    Creación de contenido técnico especializado sobre diseño de producto y desarrollo para plataformas referentes del sector
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
 
-          {/* Skills Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <span className={styles.sectionNumber}>03</span>
               <h2 className={styles.sectionTitle}>Skills</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               <div className={styles.skillsGrid}>
                 <div className={styles.skillCategory}>
-                  <h4 className={styles.skillTitle}>Languages</h4>
+                  <h4 className={styles.skillTitle}>FIGMA</h4>
                   <div className={styles.skillTags}>
-                    <span className={styles.skillTag}>JavaScript</span>
-                    <span className={styles.skillTag}>TypeScript</span>
-                    <span className={styles.skillTag}>HTML/CSS</span>
+                    <span className={styles.skillTag}>Auto-Layout</span>
+                    <span className={styles.skillTag}>Prototyping</span>
+                    <span className={styles.skillTag}>Wireframing</span>
+                    <span className={styles.skillTag}>Design System</span>
                   </div>
                 </div>
-                
+
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Frontend</h4>
                   <div className={styles.skillTags}>
@@ -121,7 +119,7 @@ const AboutPage = () => {
                     <span className={styles.skillTag}>Tailwind CSS</span>
                   </div>
                 </div>
-                
+
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Backend</h4>
                   <div className={styles.skillTags}>
@@ -130,7 +128,7 @@ const AboutPage = () => {
                     <span className={styles.skillTag}>MongoDB</span>
                   </div>
                 </div>
-                
+
                 <div className={styles.skillCategory}>
                   <h4 className={styles.skillTitle}>Tools</h4>
                   <div className={styles.skillTags}>
@@ -143,64 +141,15 @@ const AboutPage = () => {
             </div>
           </section>
 
-          {/* Writing Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <span className={styles.sectionNumber}>04</span>
-              <h2 className={styles.sectionTitle}>Writing</h2>
+              <h2 className={styles.sectionTitle}>Un poco más</h2>
             </div>
-            
-            <div className={styles.sectionBody}>
-              <p className={styles.paragraph}>
-                I&apos;ve had the pleasure of writing for some amazing publications 
-                as a freelance technical author:
-              </p>
-              
-              <div className={styles.writingLinks}>
-                <a 
-                  href="https://www.100ms.live/blog/author/nitin" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>100ms Blog</span>
-                  <VscLinkExternal size={14} />
-                </a>
-                
-                <a 
-                  href="https://blog.logrocket.com/author/nitinranganath/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>LogRocket Blog</span>
-                  <VscLinkExternal size={14} />
-                </a>
-                
-                <a 
-                  href="https://dev.to/itsnitinr" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.writingLink}
-                >
-                  <span>DEV.to</span>
-                  <VscLinkExternal size={14} />
-                </a>
-              </div>
-            </div>
-          </section>
 
-          {/* Beyond Code Section */}
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <span className={styles.sectionNumber}>05</span>
-              <h2 className={styles.sectionTitle}>Beyond Code</h2>
-            </div>
-            
             <div className={styles.sectionBody}>
               <p className={styles.paragraph}>
-                Aside from programming and writing, I enjoy reading dystopian novels, 
-                listening to calm piano music, or just enjoying some downtime.
+                A parte del diseño y del desarrollo de producto, me gusta descubrir paraísos naturales, escuchar algo de buena música y disfrutar de un buen aperitivo al solete en buena compañía.
               </p>
             </div>
           </section>
@@ -208,7 +157,7 @@ const AboutPage = () => {
 
         <footer className={styles.footer}>
           <Link href="/projects" className={styles.footerLink}>
-            View my projects →
+            Ver mis proyectos →
           </Link>
         </footer>
       </div>

@@ -7,28 +7,25 @@ import '@/styles/themes.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nitin Ranganath | Portfolio',
-    template: 'Nitin Ranganath | %s',
+    default: 'Eduard Hernández | Portfolio',
+    template: 'Eduard Hernández | %s',
   },
-  description:
-    "Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use",
+  description: "Product Designer con sólida base como Frontend Developer. Diseño experiencias de usuario estratégicas y construyo sistemas de diseño escalables con React y TypeScript.",
   keywords: [
-    'nitin ranganath',
-    'nitin',
-    'ranganath',
-    'web developer portfolio',
-    'nitin web developer',
-    'nitin developer',
-    'mern stack',
-    'nitin ranganath portfolio',
-    'vscode-portfolio',
+    'eduard hernández',
+    'ux engineer',
+    'ui developer',
+    'ux designer',
+    'ui designer',
+    'product designer',
+    'react developer',
+    'nextjs',
+    'trosdesuru'
   ],
   openGraph: {
-    title: "Nitin Ranganath's Portfolio",
-    description:
-      "A full-stack developer building websites that you'd like to use.",
-    images: ['https://imgur.com/4zi5KkQ.png'],
-    url: 'https://vscode-portfolio.vercel.app',
+    title: "Eduard Hernández's Portfolio",
+    description: "Product Designer & UX Engineer construyendo data-driven y aplicaciones funcionales.",
+    url: 'https://eduardhernandez.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',

@@ -1,41 +1,11 @@
 import styles from '@/styles/ContactCode.module.css';
 
 const contactItems = [
-  {
-    social: 'website',
-    link: 'nitinranganath.com',
-    href: 'https://nitinranganath.com',
-  },
-  {
-    social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
-  },
-  {
-    social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
-  },
-  {
-    social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
-  },
-  {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'peerlist',
-    link: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
-  },
+  { social: 'website', link: 'eduardhernandez.vercel.app', href: 'https://eduardhernandez.vercel.app/' },
+  { social: 'email', link: 'eduardhernandezventos@gmail.com', href: 'mailto:eduardhernandezventos@gmail.com' },
+  { social: 'github', link: 'trosdesuru', href: 'https://github.com/trosdesuru' },
+  { social: 'linkedin', link: 'eduard-hernandez-ventos', href: 'https://www.linkedin.com/in/eduard-hernandez-ventos' },
+  { social: 'portfolio', link: 'behance.net/eduardhernnd', href: 'https://www.behance.net/eduardhernnd' },
 ];
 
 const ContactCode = () => {

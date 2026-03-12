@@ -21,12 +21,12 @@ export default function HomePage() {
 
             <h1 className={styles.name}>Eduard Hernández</h1>
 
-            <p className={styles.role}>UX/UI Designer | Product Designer | UX Engineer | </p>
+            <p className={styles.role}>Product Designer | UX/UI Specialist | UX Engineer</p>
 
             <div className={styles.divider} />
 
             <p className={styles.description}>
-              Product Designer con experiencia liderando la estrategia de diseño y la experiencia de usuario en entornos SaaS B2B y plataformas transaccionales de alto tráfico.Mi perfil es híbrido:  combino una fuerte orientación a negocio y análisis de datos con una sólida base técnica en Ingeniería de Software. Me permite diseñar interfaces visualmente atractivas, definir roadmaps de producto, crear Sistemas de Diseño escalables y alinear cada decisión con las métricas clave de conversión.
+              Product Designer híbrido especializado en SaaS B2B. Transformo datos e Ingeniería de Software en interfaces de alto tráfico que impulsan la conversión mediante sistemas de diseño escalables y visión de producto.
             </p>
           </div>
 
