@@ -28,8 +28,15 @@ export const projects: Project[] = [
     title: 'SaaS Logístico | Valerdat',
     description: 'Diseño de dashboards analíticos e interfaces para la gestión de datos complejos en un entorno SaaS B2B.',
     logo: '/logos/valerdat.png',
-    link: '',
+    link: '#',
     slug: 'valerdat',
+  },
+  {
+    title: 'Al Borde del Burnout',
+    description: '',
+    logo: '/logos/icon-burnout.png',
+    link: '#',
+    slug: 'albordedelburnout',
   },
   {
     title: 'Cities App',

@@ -47,7 +47,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
         <div className={styles.action}>
           <span className={styles.link}>
-            View Project
+            Ver Proyecto
             <VscLinkExternal size={12} />
           </span>
         </div>
