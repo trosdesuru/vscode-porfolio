@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description:
       "Diseño de dashboards analíticos e interfaces para la gestión de datos complejos en un entorno SaaS B2B.",
     logo: "/logos/valerdat.png",
-    link: "#",
+    link: "https://project-valerdat.vercel.app/",
     slug: "valerdat",
   },
   {

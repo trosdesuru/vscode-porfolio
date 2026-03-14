@@ -46,7 +46,7 @@ const commands: Record<string, () => string[]> = {
     'Proyectos Destacados:',
     '  1. Ticketeame - Liderazgo de diseño y estrategia UX/UI (SaaS B2B2C)',
     '  2. VSCode Portfolio - ¡Este portfolio interactivo que estás viendo!',
-    '  3. Valerdat - Diseño de dashboards analíticos (SaaS Logístico)',
+    '  3. Valerdat - Diseño de dashboard analítico (SaaS Logístico)',
     '  4. Cities App - Diseño UX/UI para descubrir lugares auténticos',
     '',
     'Visita la pestaña de Proyectos para más detalles.',
