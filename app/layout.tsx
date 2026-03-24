@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Eduard Hernández",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portfolio de Eduard Hernández - UX Engineer",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "Eduard Hernández Portfolio",
     description:
       "Product Designer & UX Engineer construyendo data-driven y aplicaciones funcionales.",
-    images: ["/images/og-image.png"],
+    images: ["/og-image.png"],
   },
 };
 
