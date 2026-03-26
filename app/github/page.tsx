@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
-import { VscRepo, VscPerson, VscStarEmpty, VscRepoForked, VscLinkExternal, VscGithub } from 'react-icons/vsc';
+import { VscRepo, VscPerson, VscStarEmpty, VscRepoForked, VscLinkExternal } from 'react-icons/vsc';
 
 import RepoCard from '@/components/RepoCard';
+import GithubProfileLink from '@/components/GithubProfileLink';
 import { Repo, User } from '@/types';
 
 import styles from '@/styles/GithubPage.module.css';
@@ -57,16 +58,7 @@ export default async function GithubPage() {
             </div>
           </div>
 
-          <a 
-            href={`https://github.com/${user.login}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.profileLink}
-          >
-            <VscGithub size={18} />
-            <span>Ver Perfil</span>
-            <VscLinkExternal size={14} />
-          </a>
+          <GithubProfileLink username={user.login} />
         </header>
 
         {/* Stats */}

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { VscSymbolColor, VscTerminal, VscFiles, VscGoToFile, VscGear, VscColorMode, VscHome, VscAccount, VscCode, VscBook, VscMail, VscGithubAlt } from 'react-icons/vsc';
 import { MdNavigateNext } from 'react-icons/md';
 
+import posthog from 'posthog-js';
 import { THEMES } from '@/lib/themes';
 import styles from '@/styles/CommandPalette.module.css';
 
@@ -130,10 +131,12 @@ const CommandPalette = ({ isOpen, onClose, onToggleTerminal, isTerminalOpen }: C
           const theme = filteredThemes[index];
           document.documentElement.setAttribute('data-theme', theme.theme);
           localStorage.setItem('theme', theme.theme);
+          posthog.capture('command_palette_theme_selected', { theme: theme.theme, theme_name: theme.name });
           onClose();
         }
       } else {
         if (index < filteredCommands.length) {
+          posthog.capture('command_palette_command_executed', { command_id: filteredCommands[index].id, command_label: filteredCommands[index].label, category: filteredCommands[index].category });
           filteredCommands[index].action();
           if (filteredCommands[index].id !== 'change-theme') {
             onClose();

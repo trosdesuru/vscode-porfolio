@@ -15,8 +15,18 @@ const nextConfig: NextConfig = {
       { source: "/mail", destination: "/" },
       { source: "/linkedin", destination: "/" },
       { source: "/test", destination: "/" },
+      { source: "/mca", destination: "/" },
+      {
+        source: "/ingest/static/:path*",
+        destination: "https://eu-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/ingest/:path*",
+        destination: "https://eu.i.posthog.com/:path*",
+      },
     ];
   },
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;

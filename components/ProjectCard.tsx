@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { VscLinkExternal } from 'react-icons/vsc';
 import { track } from '@vercel/analytics';
+import posthog from 'posthog-js';
 import { Project } from '@/types';
 
 import styles from '@/styles/ProjectCard.module.css';
@@ -21,6 +22,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       className={styles.card}
       onClick={() => {
         track('Project Clicked', { projectName: project.title });
+        posthog.capture('project_clicked', { project_name: project.title, project_link: project.link });
       }}
     >
       <div className={styles.number}>

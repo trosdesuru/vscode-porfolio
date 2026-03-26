@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { VscColorMode } from 'react-icons/vsc';
 import { track } from '@vercel/analytics';
+import posthog from 'posthog-js';
 
 import { THEMES } from '@/lib/themes';
 import ThemeInfo from '@/components/ThemeInfo';
@@ -25,6 +26,7 @@ const SettingsPage = () => {
     setActiveTheme(theme);
 
     track('Theme Changed', { newTheme: theme, source: 'Settings Page' });
+    posthog.capture('theme_changed', { new_theme: theme, source: 'settings_page' });
   };
 
   if (!isLoaded) {

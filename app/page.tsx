@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { VscArrowRight, VscGithub, VscMail, VscCode } from 'react-icons/vsc';
+import posthog from 'posthog-js';
 
 import styles from '@/styles/HomePage.module.css';
 
@@ -31,12 +32,12 @@ export default function HomePage() {
           </div>
 
           <div className={styles.actions}>
-            <Link href="/projects" className={styles.primaryAction}>
+            <Link href="/projects" className={styles.primaryAction} onClick={() => posthog.capture('home_cta_clicked', { cta: 'ver_proyectos' })}>
               <span>Ver Proyectos</span>
               <VscArrowRight size={18} />
             </Link>
 
-            <Link href="/about" className={styles.secondaryAction}>
+            <Link href="/about" className={styles.secondaryAction} onClick={() => posthog.capture('home_secondary_cta_clicked', { cta: 'ver_mas' })}>
               <span>Ver más</span>
             </Link>
           </div>
@@ -47,6 +48,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.link}
+              onClick={() => posthog.capture('home_social_link_clicked', { link: 'github' })}
             >
               <VscGithub size={16} />
               <span>GitHub</span>
@@ -54,7 +56,7 @@ export default function HomePage() {
 
             <span className={styles.linkSeparator}>/</span>
 
-            <Link href="/contact" className={styles.link}>
+            <Link href="/contact" className={styles.link} onClick={() => posthog.capture('home_social_link_clicked', { link: 'contacto' })}>
               <VscMail size={16} />
               <span>Contacto</span>
             </Link>

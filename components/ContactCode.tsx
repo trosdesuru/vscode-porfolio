@@ -1,6 +1,7 @@
 'use client'
 
 import { track } from '@vercel/analytics';
+import posthog from 'posthog-js';
 import styles from '@/styles/ContactCode.module.css';
 
 const contactItems = [
@@ -29,6 +30,7 @@ const ContactCode = () => {
             style={item.social === 'whatsapp' ? { color: '#25D366', fontWeight: '500' } : {}}
             onClick={() => {
               track('Contact Link Clicked', { method: item.social });
+              posthog.capture('contact_method_clicked', { method: item.social });
             }}
           >
             {item.link}

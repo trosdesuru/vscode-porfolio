@@ -2,6 +2,7 @@
 
 import { VscGithub, VscMail, VscLinkExternal } from 'react-icons/vsc';
 import Link from 'next/link';
+import posthog from 'posthog-js';
 
 import styles from '@/styles/AboutPage.module.css';
 
@@ -248,7 +249,7 @@ const AboutPage = () => {
         </div>
 
         <footer className={styles.footer}>
-          <Link href="/projects" className={styles.footerLink}>
+          <Link href="/projects" className={styles.footerLink} onClick={() => posthog.capture('about_cta_clicked', { cta: 'ver_mis_proyectos' })}>
             Ver mis proyectos →
           </Link>
         </footer>
